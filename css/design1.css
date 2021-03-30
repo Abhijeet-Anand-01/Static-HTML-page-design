@@ -72,6 +72,7 @@ body {
 }
 
 .container>.bottom>form>.item>label {
+    display: block;
     line-height: 30px;
 }
 
