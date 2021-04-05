@@ -3,15 +3,21 @@
     --bgblack: #1b1b1b;
     --bggrey: #f3f3f3;
     --fontgrey: #747474;
+    --gridbox: #ebecf0;
+    --gridtext: #62687e;
 }
 
 @font-face {
-    font-family: avant_garde_bold;
-    src: url(/Static-HTML-page-design/asset/font/avant_garde_bold.ttf);
+    font-family: f1;
+    src: url(/Static-HTML-page-design/asset/font/LobsterTwo-Italic.ttf);
 }
 @font-face {
-    font-family: trade_gothic;
-    src: url(/Static-HTML-page-design/asset/font/Trade\ Gothic\ LT.ttf);
+    font-family: f2;
+    src: url(/Static-HTML-page-design/asset/font/AveriaSerifLibre-Regular.ttf);
+}
+@font-face {
+    font-family: f3;
+    src: url(/Static-HTML-page-design/asset/font/Playball-Regular.ttf);
 }
 
 * {
@@ -19,6 +25,27 @@
     padding: 0;
 }
 
+body{
+    background-color: var(--gridbox);
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-family: f1;
+    letter-spacing: 0.1rem;
+    margin-top: 40px;
+    padding-left: 20px;
+
+}
+
+h4 {
+    color: var(--pink);
+    font-family: f1;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
+}
 
 /* Left & Right Margin */
 
@@ -40,18 +67,19 @@ header {
     position: fixed;
     width: 100%;
     background-color: rgba(0,0,0,0.9);
-    padding: 28px 0px;
+    padding: 15px 0px 28px 0px;
 }
 nav {
     max-width: 1200px;
     margin: auto;
-    color: white;
+    color: var(--gridbox);
 }
 
 nav h1 {
-    font-size: 2rem;
-    font-family: avant_garde_bold;
+    font-size: 3rem;
+    font-family: f1;
     padding-left: 10px;
+    letter-spacing: 0.15rem;
 }
 
 nav ul {
@@ -61,11 +89,19 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
-    font-size: 1rem;
-    font-family: avant_garde_bold;
+    color: var(--gridbox);
+    font-size: 1.2rem;
+    font-family: f1;
     padding: 10px 0px;
     margin: 0px 20px;
+    letter-spacing: 0.04rem;
+    transition: all 0.3s ease-in;  
+    
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    color: var(--pink)
 }
 
 
@@ -87,19 +123,21 @@ nav ul li a {
 }
 
 .mainContainer .text {
-    font-family: avant_garde_bold;
-    font-size: 3rem;
+    font-family: f1;
+    font-size: 4rem;
     margin: 55px 0px 0px 20px;
 }
 
 .mainContainer .name{
-    font-family: avant_garde_bold;
-    font-size: 2.2rem;
+    font-family: f1;
+    font-size: 2.8rem;
+    letter-spacing: 0.1rem;
     margin-left: 20px;
+    font-weight: 600;
 }
 
 .btn1 {
-    font-family: avant_garde_bold;
+    font-family: f1;
     color: white;
     background-color: black;
     border: 2px solid var(--pink);
@@ -107,10 +145,15 @@ nav ul li a {
     margin: 50px 0px 0px 20px;
 
 }
-.btn1 > span {
+.btn1 span {
     font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: -0.2px;
+    font-size: 1.2rem;
+    letter-spacing: 01.5px;
+    transition: all 0.3s ease-in; 
+}
+.btn1:hover{
+    cursor: pointer;
+    color: var(--pink);
 }
 
 .groupbox {
@@ -121,11 +164,14 @@ nav ul li a {
 }
 
 .groupbox .box {
+
     color: white;
     background-color: var(--bgblack);
     width: 25%;
     height: 380px;
     padding: 40px 40px 0px 40px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 10px #fff,inset 2px 2px 10px #babecc;
 }
 
 .groupbox .box i {
@@ -134,9 +180,11 @@ nav ul li a {
     margin-top: 25px;
 }
 .groupbox .box h1 {
-    font-family: avant_garde_bold;
-    font-size: 1.3rem;
-    margin-top: 65px;
+    font-family: f1;
+    font-size: 1.8rem;
+    margin-top: 60px;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 .groupbox .box h5 {
     color: var(--pink);
@@ -144,7 +192,7 @@ nav ul li a {
     margin-top: -27px;
 }
 .groupbox .box p {
-    font-family: trade_gothic;
+    font-family: f2;
     margin-top: 25px;
     line-height: 25px;
     font-size: 1.1rem;
@@ -170,34 +218,24 @@ nav ul li a {
     width: 60%;
 }
 .ctext p {
-    font-family: trade_gothic;
+    font-family: f2;
     color: var(--fontgrey);
     font-size: 1.6rem;
     line-height: 35px;
-    padding: 70px 20px 0px 0px;
+    padding: 70px 15px 0px 0px;
+
 }
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
+    color: var(--gridtext);
+    box-shadow: -10px -10px 10px rgb(212, 212, 212), 10px 10px 10px #a6aab6;
 }
 
 /* Article > hobbyNdSoftSkills */
 
-
-h2 {
-    font-size: 2.5rem;
-    font-family: avant_garde_bold;
-    margin-top: 40px;
-    padding-left: 20px;
-}
-
-h4 {
-    color: var(--pink);
-    font-family: trade_gothic;
-    margin-top: 20px;
-    padding-left: 20px;
-}
 
 .hobbyNdSoftSkills .grid {
     display: grid;
@@ -209,10 +247,34 @@ h4 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .hobbyNdSoftSkills .grid .box {
+    display: flex;
+    align-items: center;
+
     background-color: var(--bggrey);
-    padding: 40px 30px;
-    font-size: 1.1rem;
-    font-family: avant_garde_bold;
+    padding: 0px 20px;
+    height: 101px;
+    font-size: 1.6rem;
+    font-family: f2;
+    border-radius: 10px;
+    color: var(--gridtext);
+    background-color: var(--gridbox);
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+}
+.hobbyNdSoftSkills .grid .box .fa{
+    font-size: 2rem;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.hobbyNdSoftSkills .grid .box:hover .fa{
+    font-size: 3rem;
+    opacity: 1;
+    padding-right: 20px;
+    
+}
+.hobbyNdSoftSkills .grid .box:hover{
+    background-color: var(--pink);
+    color: var(--gridbox);
 }
 
 
@@ -221,7 +283,7 @@ h4 {
 .gallery button {
     position: relative;
     text-align: right;
-    font-family: avant_garde_bold;
+    font-family: f1;
     color: black;
     background-color: white;
     border: 2px solid var(--pink);
@@ -230,7 +292,7 @@ h4 {
 }
 
 .gallery h4{
-    font-size: 1.8rem;;
+    font-size: 2.2rem;
 }
 
 .gallery .grid {
@@ -245,6 +307,15 @@ h4 {
     margin-bottom: 50px;
 }
 
+.gallery .grid .box{
+    transition: all 0.2s ease-in;
+}
+
+.gallery .grid .box:hover{
+    /* filter: grayscale(100%); */
+    transform: scale(1.1);
+    
+}
 
 /* Footer */
 
@@ -262,34 +333,53 @@ padding: 120px 35px;
     width: 33.33%;
     text-align: center;
 }
+
 .foot a{
     text-decoration: none;
 }
+
 .foot .icons i{
     color: white;
     border: 2px solid var(--pink);
     border-radius: 40px;
     padding: 12px;
+    margin: 3px;
+    transition: all 0.2s ease-in-out;
 }
+
+.foot .icons i:hover{
+    transform:translateY(-10px) scale(1.2);
+    color: var(--pink);
+    
+}
+
 .foot .text{
     width: 33.33%;
     font-size: 2.5rem;
-    font-family: avant_garde_bold;
+    font-family: f1;
     margin: 0px;
+    letter-spacing: 0.1rem;
 }
 
 .foot .mail{
     width: 33%;
     text-align: center;
 }
+
 .foot .mail a{
-    font-family: avant_garde_bold;
+    font-family: f2;
     color: white;
-    background-color: black;
+    background-color: var(--bgblack);
     border: 2px solid var(--pink);
     padding: 17px 34px;
-    
+    letter-spacing: 0.02rem;
+    transition: all 0.2s ease-in-out;
+}
 
+.foot .mail a:hover{
+    background-color: var(--pink);
+    font-size: 1.2rem;
+    padding: 16px 26px;
 }
 
 
@@ -301,7 +391,8 @@ padding: 120px 35px;
     background-color: #161616;
     color: white;
     font-size: 1.5rem;
-    font-family: avant_garde_bold;
+    font-family: f1;
+    letter-spacing: 0.1rem;
 }
 .call .fa{
     font-size: 3rem;
@@ -314,8 +405,15 @@ padding: 120px 35px;
 .end{
     background-color: black;
     color: white;
-    font-family: trade_gothic;
+    font-family: f1;
     padding: 30px;
     font-size: 1rem;
-    text-align: center;
+    text-align: center; 
+    letter-spacing: 0.04rem;
+}
+
+.end span{
+    font-size: 1.2rem;
+    font-family: f3;
+    padding-left: 10px;
 }
