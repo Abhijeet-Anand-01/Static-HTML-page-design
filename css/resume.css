@@ -9,15 +9,15 @@
 
 @font-face {
     font-family: f1;
-    src: url(/Static-HTML-page-design/asset/font/LobsterTwo-Italic.ttf);
+    src: url(../asset/font/LobsterTwo-Italic.ttf);
 }
 @font-face {
     font-family: f2;
-    src: url(/Static-HTML-page-design/asset/font/AveriaSerifLibre-Regular.ttf);
+    src: url(../asset/font/AveriaSerifLibre-Regular.ttf);
 }
 @font-face {
     font-family: f3;
-    src: url(/Static-HTML-page-design/asset/font/Playball-Regular.ttf);
+    src: url(../asset/font/Playball-Regular.ttf);
 }
 
 * {
@@ -110,7 +110,7 @@ nav ul li a:hover {
     background-color: black;
     width: 100%;
     padding-top: 130px;
-    background-image: url(/Static-HTML-page-design/asset/img/img1.jpg);
+    background-image: url(../asset/img/img1.jpg);
     background-position: 49% 45%;
     background-repeat: no-repeat;
     background-size: 1208px auto;
