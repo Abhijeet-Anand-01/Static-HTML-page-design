@@ -41,8 +41,8 @@ h2 {
 h4 {
     color: var(--pink);
     font-family: f1;
-    margin-top: 20px;
-    padding-left: 20px;
+    /* margin-top: 20px; */
+    padding: 20px 0px 0px 20px;
     font-size: 1.5rem;
     letter-spacing: 0.06rem;
 }
@@ -96,7 +96,6 @@ nav ul li a {
     margin: 0px 20px;
     letter-spacing: 0.04rem;
     transition: all 0.3s ease-in;  
-    
 }
 
 nav ul li a:hover {
@@ -139,11 +138,10 @@ nav ul li a:hover {
 .btn1 {
     font-family: f1;
     color: white;
-    background-color: black;
+    background-color: rgba(0,0,0, 0.6);
     border: 2px solid var(--pink);
     padding: 17px 34px;
     margin: 50px 0px 0px 20px;
-
 }
 .btn1 span {
     font-weight: 700;
@@ -157,21 +155,26 @@ nav ul li a:hover {
 }
 
 .groupbox {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     margin-top: 145px;
     padding: 0px 20px;
+
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .groupbox .box {
 
     color: white;
     background-color: var(--bgblack);
-    width: 25%;
+    /* width: 25%; */
     height: 380px;
     padding: 40px 40px 0px 40px;
     border-radius: 10px;
-    box-shadow: -1px -1px 10px #fff,inset 2px 2px 10px #babecc;
+    /* box-shadow: -1px -1px 10px #fff,inset 2px 2px 10px #babecc; */
 }
 
 .groupbox .box i {
@@ -217,7 +220,7 @@ nav ul li a:hover {
     padding-left: 60px;
     width: 60%;
 }
-.ctext p {
+.aboutMe .ctext p {
     font-family: f2;
     color: var(--fontgrey);
     font-size: 1.6rem;
