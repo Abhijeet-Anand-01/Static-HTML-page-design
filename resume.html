@@ -58,6 +58,9 @@
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div> -->
+            <div class="menu-btn">
+                <div class="menu-btn-burger"></div>
+            </div>
         </nav>
     </header>
 
@@ -361,6 +364,7 @@
             <span>
                 <div class="font">Build with: <i class="fa fa-html5" aria-hidden="true"></i>
                     <i class="fa fa-css3" aria-hidden="true"></i>
+                    <i class="fab fa-js-square" aria-hidden="true"></i>
                 </div>
             </span>
         </section>
@@ -387,7 +391,21 @@
     <script>
         $('.carousel').carousel({
             interval: 3000
-        })
+        });
+
+
+        const menuBtn = document.querySelector(".menu-btn");
+        let menuOpen = false;
+        menuBtn.addEventListener("click", () => {
+            if(!menuOpen) {
+                menuBtn.classList.add("open");
+                menuOpen = true;
+            }
+            else {
+                menuBtn.classList.remove("open");
+                menuOpen = false;
+            }
+        });
     </script>
 
 </body>
