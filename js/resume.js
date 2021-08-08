@@ -7,20 +7,28 @@ const menuBtn = document.querySelector(".menu-btn");
 const listNav = document.querySelector(".list");
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
-    if(!menuOpen) {
+    if (!menuOpen) {
         menuBtn.classList.add("open");
         menuOpen = true;
         listNav.classList.add("open");
     }
     else {
-        menuBtn.classList.remove("open");
-        menuOpen = false;
-        listNav.classList.remove("open");
+        closeNav();
     }
 });
 
-
-// document.getElementById('hamburger').addEventListener('click', () => {
-//         if(!open) {ul.classList.remove("close");
-//         ul.classList.add("open");}
+// const list = document.querySelector(".navname");
+// list.addEventListener("click", () => {
+//     if (menuOpen) {
+//         closeNav();
+//     }
 // });
+
+function closeNav() {
+    menuBtn.classList.remove("open");
+    menuOpen = false;
+    listNav.classList.remove("open");
+}
+
+// document.querySelector(".navname").addEventListener("click", alert("Hello World!"));
+
