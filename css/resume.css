@@ -112,12 +112,9 @@ nav ul {
     color: var(--pink);
 }
 
-/* .burger div{
-    width: 25px;
-    height: 5px;
-    background-color: red;
-    margin: 5px;
-} */
+.menu-btn {
+    display: none;
+}
 
 /* Article > mainContainer */
 

@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/fd52d79187.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/resume.css">
     <link rel="stylesheet" href="css/resumeMediaQ.css">
+    <link rel="shortcut icon" href="asset/img/logo1.png" type="image/x-icon">
 
     <title>Resume</title>
 </head>
@@ -23,7 +24,7 @@
                 <img src="asset/img/logo1.png" alt="">
             </span>
 
-            <ul>
+            <ul class="list">
                 <li onclick="document.getElementById('aboutMe').scrollIntoView({behavior: 'smooth', block: 'start'})"
                     class="navname">
                     <a class="red">About Me</a>
@@ -53,12 +54,7 @@
                     <a>Contact Me</a>
                 </li>
             </ul>
-            <!-- <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div> -->
-            <div class="menu-btn">
+            <div class="menu-btn" id="hamburger">
                 <div class="menu-btn-burger"></div>
             </div>
         </nav>
@@ -388,25 +384,7 @@
         crossorigin="anonymous"></script>
 
 
-    <script>
-        $('.carousel').carousel({
-            interval: 3000
-        });
-
-
-        const menuBtn = document.querySelector(".menu-btn");
-        let menuOpen = false;
-        menuBtn.addEventListener("click", () => {
-            if(!menuOpen) {
-                menuBtn.classList.add("open");
-                menuOpen = true;
-            }
-            else {
-                menuBtn.classList.remove("open");
-                menuOpen = false;
-            }
-        });
-    </script>
+    <script src="js/resume.js"></script>
 
 </body>
 
