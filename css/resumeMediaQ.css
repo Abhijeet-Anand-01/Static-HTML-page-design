@@ -93,6 +93,12 @@
         transform: scale(1.2);
     }
 
+    .certificates #carouselExampleInterval {
+        margin: auto;
+        width: 75%;
+        margin-top: 50px;
+    }
+
     .foot {
         padding: 22px 0px;
     }
@@ -134,6 +140,12 @@
 
     .navigation ul li a {
         margin: 0px 12px;
+    }
+
+    .certificates #carouselExampleInterval {
+        margin: auto;
+        width: 50%;
+        margin-top: 50px;
     }
 }
 

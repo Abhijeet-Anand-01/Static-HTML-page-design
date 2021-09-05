@@ -64,7 +64,7 @@ header {
     position: fixed;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    padding: 15px 0px 15px 0px;
+    padding: 0px 0px 10px 0px;
     z-index: 20;
 }
 nav {
@@ -80,7 +80,7 @@ nav {
     padding: 0 20px;
 }
 .navigation .logo img {
-    width: 75px;
+    width: 50px;
 }
 
 nav h1 {
@@ -94,7 +94,7 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .navigation ul li a {
