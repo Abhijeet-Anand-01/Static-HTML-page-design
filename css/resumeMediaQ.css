@@ -1,4 +1,9 @@
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 330px) {
+    .groupbox .box {
+        padding: 8px 40px 0px;
+    }
+
+}@media only screen and (max-width: 850px) {
     header {
         padding: 5px 0px 5px 0px;
     }
@@ -127,27 +132,7 @@
     }
 }
 
-@media only screen and (max-width: 330px) {
-    .groupbox .box {
-        padding: 8px 40px 0px;
-    }
-}
 
-@media only screen and (max-width: 1200px) {
-    .groupbox .box {
-        padding: 10px 40px 0px 40px;
-    }
-
-    .navigation ul li a {
-        margin: 0px 12px;
-    }
-
-    .certificates #carouselExampleInterval {
-        margin: auto;
-        width: 50%;
-        margin-top: 50px;
-    }
-}
 
 @media only screen and (max-width: 925px) {
     .groupbox .box {
@@ -263,3 +248,24 @@
    
     
 }
+
+@media only screen and (max-width: 1200px) {
+    .groupbox .box {
+        padding: 10px 40px 0px 40px;
+    }
+
+    .navigation ul li a {
+        margin: 0px 12px;
+    }
+
+}
+
+@media only screen and (max-width: 1450px) {
+.certificates #carouselExampleInterval {
+    margin: auto;
+    width: 50%;
+    margin-top: 50px;
+}
+}
+
+
