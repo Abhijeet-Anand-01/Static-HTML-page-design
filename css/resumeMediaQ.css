@@ -99,9 +99,7 @@
     }
 
     .certificates #carouselExampleInterval {
-        margin: auto;
         width: 75%;
-        margin-top: 50px;
     }
 
     .foot {
@@ -260,11 +258,9 @@
 
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1450px ) and (min-width: 851px) {
 .certificates #carouselExampleInterval {
-    margin: auto;
     width: 50%;
-    margin-top: 50px;
 }
 }
 
