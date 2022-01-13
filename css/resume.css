@@ -182,25 +182,52 @@ nav ul {
     margin-left: 20px;
     font-weight: 600;
     color: black;
+    margin-bottom: 50px;
 }
 
-.btn1 {
+/* .btn1 {
+    font-family: f1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid var(--pink);
+    margin: 50px 0px 0px 20px;
+}
+.btn1 span a {
+    margin: 17px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease-in;
+}
+.btn1 span .fa-download {
+    padding-right: 20px;
+    transition: all 0.3s ease-in;
+}
+.btn1:hover span a, .btn1:hover span .fa-download {
+    cursor: pointer;
+    color: var(--pink) !important;
+} */
+
+.download-resume {
     font-family: f1;
     color: white;
     background-color: rgba(0, 0, 0, 0.6);
     border: 2px solid var(--pink);
     padding: 17px 34px;
     margin: 50px 0px 0px 20px;
-}
-.btn1 span {
+    /* margin: 17px; */
     font-weight: 700;
     font-size: 1.2rem;
-    letter-spacing: 01.5px;
+    letter-spacing: 1.5px;
     transition: all 0.3s ease-in;
 }
-.btn1:hover {
-    cursor: pointer;
-    color: var(--pink);
+
+.download-resume:hover {
+    color: var(--pink) !important;
+}
+
+.download-resume .fa-download {
+    padding-right: 20px;
 }
 
 .groupbox {

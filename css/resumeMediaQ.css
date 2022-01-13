@@ -45,11 +45,16 @@
         margin-left: 10px;
     }
 
-    .btn1 {
+    /* .btn1 {
+        padding: 12px 20px;
+        margin: 50px 0px 0px 25px;
+    } */
+
+    .download-resume { 
         padding: 12px 20px;
         margin: 50px 0px 0px 25px;
     }
-
+    
     .aboutMe .container {
         display: flex;
         flex-direction: column;
