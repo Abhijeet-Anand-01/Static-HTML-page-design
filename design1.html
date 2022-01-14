@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/design1.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <div class="center-screen">
+        <div class="container">
+            <div id="firstbox" class="top">
+                <div class="img"></div>
+                <p id="heading">CONTACT US</p>
+                <hr>
+                <p id="statement">Fill out the form below to learn more!</p>
+
+            </div>
+            <div id="secondbox" class="bottom">
+                <form action="backend.php">
+                    <div class="item">
+                        <label for="fname"> First Name </label>
+                        <input type="text" id="fname" placeholder="John">
+                    </div>
+                    <div class="item">
+                        <label for="lname"> Last Name</label>
+                        <input type="text" id="lname" placeholder="Smith">
+                    </div>
+
+                    <div class="item">
+                        <label for="email"> email <span style="color: red;">*</span> </label>
+                        <input type="email" id="email" placeholder="john.smith@gmail.com">
+                    </div>
+                    <hr width="100%">
+
+                    <div class="item">
+                        <label for="comments"> comments</label>
+                        <textarea name="" id="comments" rows="5"></textarea>
+                    </div>
+
+                    <div style="font-family: -webkit-pictograph;">
+                        <span><input type="submit" value="SUBMIT" id="button"></span>
+                        <span style="color: #1976d2;"> or press enter</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
