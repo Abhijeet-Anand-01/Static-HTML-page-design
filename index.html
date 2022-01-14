@@ -17,11 +17,15 @@
 </head>
 
 <body>
+
+    <!-- Scroll to the top-->
+    <a id="scroll"><span></span></a>
+
     <header>
         <nav class="navigation">
 
             <span class="logo">
-                <a href="resume.html">
+                <a href="index.html">
                     <img src="asset/img/logo1.png" alt="">
                 </a>
             </span>
@@ -71,9 +75,11 @@
                 <div class="divider">__</div>
                 <div class="text">Hello There!</div>
                 <div class="name"> It's Abhijeet Anand.</div>
-                <button
+                <!-- <button
                     onclick="document.getElementById('aboutMe').scrollIntoView({behavior: 'smooth', block: 'start'})"
-                    class="btn1" id="a"><span>Scroll Down</span></button>
+                    class="btn1" id="a"><span>Scroll Down</span></button> -->
+                    <!-- <button class="btn1" id="a"><span></span></button> -->
+                    <a class="download-resume" style="text-decoration: none; color: white;" href="https://drive.google.com/file/d/19AQeKHkbZl8mmzfNGFjfDi4GiSsvRTxx/view?usp=sharing" target="_blank"><i class="fa fa-download" aria-hidden="true"></i>Resume</a>
                 <div class="groupbox" id="groupbox">
                     <div class="box">
                         <i class="fa fa-graduation-cap" aria-hidden="true"></i>
@@ -392,7 +398,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/resume.js"></script>
 
 </body>
