@@ -45,15 +45,15 @@
         margin-left: 10px;
     }
 
-    /* .btn1 {
-        padding: 12px 20px;
-        margin: 50px 0px 0px 25px;
-    } */
-
-    .download-resume { 
+    .btn1 {
         padding: 12px 20px;
         margin: 50px 0px 0px 25px;
     }
+
+    /* .download-resume { 
+        padding: 12px 20px;
+        margin: 50px 0px 0px 25px;
+    } */
     
     .aboutMe .container {
         display: flex;
@@ -264,9 +264,9 @@
 }
 
 @media only screen and (max-width: 1450px ) and (min-width: 851px) {
-.certificates #carouselExampleInterval {
-    width: 50%;
-}
+    .certificates #carouselExampleInterval {
+        width: 50%;
+    }
 }
 
 
